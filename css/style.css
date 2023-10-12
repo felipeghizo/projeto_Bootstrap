@@ -1,0 +1,171 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Header */
+nav.navbar{
+  background-color: rgb(207, 207, 207);
+}
+nav.navbar a.nav-link{
+  margin: 0 15px;
+}
+
+/* main */
+div.main-box{
+  position: relative;
+  top: 50px;
+}
+/* main background */
+section#bg{
+  position: relative;
+  width: 100%;
+  min-height: 550px;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+div.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+div.fix-z-index{
+  position: relative;
+  z-index: 2;
+}
+/* main content */
+div.main-content{
+  color: white;
+  padding: 200px 5% 0 5%;
+}
+div.main-content h2{
+  font-size: 38px;
+  font-weight: 200;
+}
+div.main-content p{
+  font-size: 18px;
+  font-weight: 400;
+  text-indent: 25px;
+  text-align: justify;
+}
+
+/* section chamada */
+section#chamada{
+  background-color: #3FA3C5;
+  padding: 10px 0;
+}
+section#chamada h2{
+  color: white;
+  font-size: 38px;
+}
+
+/* section sobre */
+section#sobre{
+  padding: 40px 0;
+  background-color: rgb(216, 216, 216);
+}
+section#sobre .custom-title{
+  position: relative;
+}
+section#sobre .custom-title h2{
+  position: relative;
+  color: rgb(75, 75, 75);
+  font-size: 30px;
+  width: 85px;
+  background-color: rgb(216, 216, 216);
+}
+section#sobre .custom-title div{
+  position: absolute;
+  top: 30px;
+  left: 85px;
+  width: 20%;
+  height: 2px;
+  background-color: #3FA3C5;
+}
+
+/* section contatos */
+section#contatos{
+  padding: 40px 2% 80px 2%;
+}
+section#contatos h2, section#contatos h6, section#contatos p{
+  color: #646464;
+}
+
+/* section cadastro */
+section#cadastro{
+  padding: 40px 0;
+  background-color: rgb(216, 216, 216);
+}
+section#cadastro div.form-group{ 
+  padding-top: 20px;  
+}
+section#cadastro input{
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 10px 15px;
+}
+section#cadastro button{
+  margin-top: 10px;
+  width: 20%;
+  background-color: #3FA3C5;
+  color: white;
+  font-size: 20px;
+}
+section#cadastro button:hover{
+  background-color: #3990ad;
+  cursor: pointer;
+}
+
+/* section fake footer */
+section#fake-footer{
+  padding-top:20px;
+  background: #333;
+  color: white;
+}
+section#fake-footer div.col-md-6, section#fake-footer div.col-md-3{
+  padding:10px;
+
+}
+section#fake-footer h2{
+  font-weight: 300;
+  margin: 10px 0;
+}
+section#fake-footer p{
+   text-indent: 25px;
+}
+section#fake-footer ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  list-style-position: inside;
+}
+section#fake-footer div.group-btns a{
+  margin: 10px;
+}
+section#fake-footer a{
+  color: white;
+  font-size: 17px;
+}
+
+/* footer */
+footer{
+  color: white;
+  background:#444;
+  padding:8px 0;
+
+}
+
+/* media querys */
+@media screen and (max-width: 767px){
+  div.main-content{
+    padding: 50px 5% 0 5%;
+  }
+}
